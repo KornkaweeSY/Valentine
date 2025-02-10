@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center min-h-screen w-full relative bg-pink-50 p-4">
       <div className="text-center relative z-10 max-w-4xl w-full mx-auto">
-        {!isYesClicked && (
+        {!isYesClicked ? (
           <>
             <div 
               className="flex justify-center mb-4 sm:mb-6" 
@@ -54,10 +54,7 @@ export default function Home() {
                 />
               ))}
             </div>
-            <div 
-              className="flex flex-col sm:flex-row justify-center items-center gap-2 mt-1 px-4" 
-              style={{ transform: `translateY(${topPosition}px)`, transition: 'transform 0.3s' }}
-            >
+            <div className="flex justify-center gap-2 mt-1" style={{ transform: `translateY(${topPosition}px)`, transition: 'transform 0.3s' }}>
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black text-center">
                 You will be my Valentine 
               </h1>
@@ -88,49 +85,45 @@ export default function Home() {
               )}
             </div>
           </>
-        )}
-        
-        {isYesClicked && (
-          <>
-            <div className="flex flex-col justify-center items-center space-y-4 p-4">
-              <Image 
-                src="/image/cute-bears-love.gif" 
-                alt="Heart" 
-                width={200} 
-                height={200}
-                className="w-[180px] sm:w-[200px] md:w-[250px] h-auto" 
-              />
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center px-4 text-black">
-                <span className="inline-block animate-rainbow-1">Y</span>
-                <span className="inline-block animate-rainbow-2">e</span>
-                <span className="inline-block animate-rainbow-3">h</span>
-                <span className="inline-block animate-rainbow-4">!</span>
-                <span className="inline-block animate-rainbow-5">!</span>
-                <span className="inline-block animate-rainbow-6">,</span>
-                <span> </span>
-                <span className="inline-block animate-rainbow-1">L</span>
-                <span className="inline-block animate-rainbow-2">o</span>
-                <span className="inline-block animate-rainbow-3">v</span>
-                <span className="inline-block animate-rainbow-4">e</span>
-                <span> </span>
-                <span className="inline-block animate-rainbow-5">L</span>
-                <span className="inline-block animate-rainbow-6">o</span>
-                <span className="inline-block animate-rainbow-1">v</span>
-                <span className="inline-block animate-rainbow-2">e</span>
-                <span> </span>
-                <span className="inline-block animate-rainbow-3">n</span>
-                <span className="inline-block animate-rainbow-4">a</span>
-                <span> </span>
-                <span className="inline-block animate-rainbow-5">k</span>
-                <span className="inline-block animate-rainbow-6">a</span>
-                <span className="inline-block animate-rainbow-1">b</span>
-                <span className="inline-block animate-rainbow-2"> </span>
-                <span className="inline-block animate-rainbow-3">❤️</span>
-                <span className="inline-block animate-rainbow-4">❤️</span>
-                <span className="inline-block animate-rainbow-5">❤️</span>
-              </h1>
-            </div>
-          </>
+        ) : (
+          <div className="flex flex-col justify-center items-center space-y-4 p-4">
+            <Image 
+              src="/image/cute-bears-love.gif" 
+              alt="Heart" 
+              width={200} 
+              height={200}
+              className="w-[180px] sm:w-[200px] md:w-[250px] h-auto" 
+            />
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center px-4 text-black">
+              <span className="inline-block animate-rainbow-1">Y</span>
+              <span className="inline-block animate-rainbow-2">e</span>
+              <span className="inline-block animate-rainbow-3">h</span>
+              <span className="inline-block animate-rainbow-4">!</span>
+              <span className="inline-block animate-rainbow-5">!</span>
+              <span className="inline-block animate-rainbow-6">,</span>
+              <span> </span>
+              <span className="inline-block animate-rainbow-1">L</span>
+              <span className="inline-block animate-rainbow-2">o</span>
+              <span className="inline-block animate-rainbow-3">v</span>
+              <span className="inline-block animate-rainbow-4">e</span>
+              <span> </span>
+              <span className="inline-block animate-rainbow-5">L</span>
+              <span className="inline-block animate-rainbow-6">o</span>
+              <span className="inline-block animate-rainbow-1">v</span>
+              <span className="inline-block animate-rainbow-2">e</span>
+              <span> </span>
+              <span className="inline-block animate-rainbow-3">n</span>
+              <span className="inline-block animate-rainbow-4">a</span>
+              <span> </span>
+              <span className="inline-block animate-rainbow-5">k</span>
+              <span className="inline-block animate-rainbow-6">a</span>
+              <span className="inline-block animate-rainbow-1">b</span>
+              <span className="inline-block animate-rainbow-2"> </span>
+              <span className="inline-block animate-rainbow-3">❤️</span>
+              <span className="inline-block animate-rainbow-4">❤️</span>
+              <span className="inline-block animate-rainbow-5">❤️</span>
+            </h1>
+          </div>
         )}
       </div>
     </div>
