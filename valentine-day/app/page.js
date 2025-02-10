@@ -11,7 +11,7 @@ export default function Home() {
   const [noClickCount, setNoClickCount] = useState(0);
 
   const images = [
-    { src: "/image/milk-and-mocha.gif", alt: "Happy Valentine's Day", width: 150, height: 100 },
+    { src: "/image/milk-and-mocha.gif", alt: "Happy Valentine's Day", width: 200, height: 200 },
     { src: "/image/milk-and-mocha-please.gif", alt: "Mochi Cat", width: 190, height: 80 },
     { src: "/image/mocha-sebusun.gif", alt: "Happy Valentine's Day", width: 150, height: 100 },
     { src: "/image/khersi.gif", alt: "khersi", width: 190, height: 80 },
@@ -45,7 +45,7 @@ export default function Home() {
                   alt={image.alt}
                   width={image.width}
                   height={image.height}
-                  className="w-[100px] sm:w-[150px] md:w-[190px] h-auto"
+                  className="w-[150px] sm:w-[200px] md:w-[250px] h-auto"
                   style={{
                     opacity: index === currentImageIndex ? 1 : 0,
                     transition: 'opacity 0.3s',
@@ -98,10 +98,36 @@ export default function Home() {
                 alt="Heart" 
                 width={200} 
                 height={200}
-                className="w-[150px] sm:w-[200px] md:w-[250px] h-auto" 
+                className="w-[180px] sm:w-[200px] md:w-[250px] h-auto" 
               />
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center px-4 text-black">
-                Yeh!!, Love Love na kab ❤️❤️❤️
+                <span className="inline-block animate-rainbow-1">Y</span>
+                <span className="inline-block animate-rainbow-2">e</span>
+                <span className="inline-block animate-rainbow-3">h</span>
+                <span className="inline-block animate-rainbow-4">!</span>
+                <span className="inline-block animate-rainbow-5">!</span>
+                <span className="inline-block animate-rainbow-6">,</span>
+                <span> </span>
+                <span className="inline-block animate-rainbow-1">L</span>
+                <span className="inline-block animate-rainbow-2">o</span>
+                <span className="inline-block animate-rainbow-3">v</span>
+                <span className="inline-block animate-rainbow-4">e</span>
+                <span> </span>
+                <span className="inline-block animate-rainbow-5">L</span>
+                <span className="inline-block animate-rainbow-6">o</span>
+                <span className="inline-block animate-rainbow-1">v</span>
+                <span className="inline-block animate-rainbow-2">e</span>
+                <span> </span>
+                <span className="inline-block animate-rainbow-3">n</span>
+                <span className="inline-block animate-rainbow-4">a</span>
+                <span> </span>
+                <span className="inline-block animate-rainbow-5">k</span>
+                <span className="inline-block animate-rainbow-6">a</span>
+                <span className="inline-block animate-rainbow-1">b</span>
+                <span className="inline-block animate-rainbow-2"> </span>
+                <span className="inline-block animate-rainbow-3">❤️</span>
+                <span className="inline-block animate-rainbow-4">❤️</span>
+                <span className="inline-block animate-rainbow-5">❤️</span>
               </h1>
             </div>
           </>
