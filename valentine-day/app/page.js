@@ -17,10 +17,6 @@ export default function Home() {
     { src: "/image/khersi.gif", alt: "khersi", width: 190, height: 80 },
   ];
   
-  const imagesYes = [
-    { src: "/image/cute-bears-love.gif", alt: "Mochi Cat", width: 190, height: 80 },
-  ]
-
   const handleNoClick = () => {
     setYesSize(yesSize + 0.8);
     setNoPosition(noPosition + 40);
@@ -105,7 +101,7 @@ export default function Home() {
                 className="w-[150px] sm:w-[200px] md:w-[250px] h-auto" 
               />
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center px-4 text-black">
-                Yey, Love Love na kab ❤️❤️❤️
+                Yeh!!, Love Love na kab ❤️❤️❤️
               </h1>
             </div>
           </>
